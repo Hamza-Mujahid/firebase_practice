@@ -35,8 +35,50 @@ class _RegisterState extends State<Register> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          TextField(),
-          TextField(),
+          TextField(
+            style: TextStyle(fontSize: 16, color: Colors.white),
+            decoration: InputDecoration(
+              contentPadding: EdgeInsets.symmetric(vertical: 12),
+              hintText: "Search Notes...",
+              hintStyle: const TextStyle(color: Colors.grey),
+              prefixIcon: const Icon(
+                Icons.search,
+                color: Colors.grey,
+              ),
+              fillColor: Colors.grey.shade800,
+              filled: true,
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+                borderSide: const BorderSide(color: Colors.transparent),
+              ),
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+                borderSide: const BorderSide(color: Colors.transparent),
+              ),
+            ),
+          ),
+          TextField(
+            style: TextStyle(fontSize: 16, color: Colors.white),
+            decoration: InputDecoration(
+              contentPadding: EdgeInsets.symmetric(vertical: 12),
+              hintText: "Search Notes...",
+              hintStyle: const TextStyle(color: Colors.grey),
+              prefixIcon: const Icon(
+                Icons.search,
+                color: Colors.grey,
+              ),
+              fillColor: Colors.grey.shade800,
+              filled: true,
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+                borderSide: const BorderSide(color: Colors.transparent),
+              ),
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+                borderSide: const BorderSide(color: Colors.transparent),
+              ),
+            ),
+          ),
           ElevatedButton(
               onPressed: () {
                 registerUser(
